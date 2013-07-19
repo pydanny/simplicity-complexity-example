@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="span12">
+        <h1>{{ README.0.title }}</h1>
+        <p>Created: {{ README.0.date }}</p>
+        <p>Author: {{ README.0.author }}</p>
+        <p>Version: {{ README.0.version }}</p>
+        <p>Version: {{ README.0.description }}</p>
+
+    </div>
+</div>
+{% endblock %}
