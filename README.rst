@@ -54,12 +54,12 @@ What the @#$% just happened?!?
 
     $ complexity project www
 
-5. You opened up the generated site using complexity's built-in HTTP server:
+5. You viewed the generated static site which was served by complexity_'s built-in HTTP server:
 
-    $ open http://127.0.0.1:8000
+    $ open http://127.0.0.1:9090
 
-Now what?
-==========
+And?
+====
 
 Take a look at https://github.com/pydanny/simplicity-complexity-example/blob/master/project/templates/index.html
 
@@ -82,7 +82,13 @@ Take a look at https://github.com/pydanny/simplicity-complexity-example/blob/mas
     </div>
     {% endblock %}
 
+Complexity_ used Jinja2 to render the data elements in that module with the README.json module you just created from this file using simplicity_.
+
+Easy as that.
+
+
 
 .. _simplicity: https://github.com/pydanny/simplicity
 .. _complexity: https://github.com/audreyr/complexity
+
 
