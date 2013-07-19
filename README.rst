@@ -19,6 +19,8 @@ Clone this and use it with the Complexity static site generator. Try it out:
 
 Open http://127.0.0.1:9090/
 
+BOOM!
+
 What the @#$% just happened?!?
 ================================
 
@@ -55,6 +57,30 @@ What the @#$% just happened?!?
 5. You opened up the generated site using complexity's built-in HTTP server:
 
     $ open http://127.0.0.1:8000
+
+Now what?
+==========
+
+Take a look at https://github.com/pydanny/simplicity-complexity-example/blob/master/project/templates/index.html
+
+.. code-block:: jinja2
+
+    {% extends "base.html" %}
+
+    {% block title %}Home{% endblock %}
+
+    {% block content %}
+    <div class="row">
+        <div class="span12">
+            <h1>{{ README.0.title }}</h1>
+            <p>Created: {{ README.0.date }}</p>
+            <p>Author: {{ README.0.author }}</p>
+            <p>Version: {{ README.0.version }}</p>
+            <p>Version: {{ README.0.description }}</p>
+
+        </div>
+    </div>
+    {% endblock %}
 
 
 .. _simplicity: https://github.com/pydanny/simplicity
