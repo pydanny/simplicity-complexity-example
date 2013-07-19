@@ -27,11 +27,34 @@ What the @#$% just happened?!?
     * simplicity_: Converts ReStructuredText into JSON.
     * complexity_: A refreshingly simple static site generator, for those who like to work in HTML.
 
+.. code-block:: bash
+
+    $ pip install simplicity
+    $ pip install complexity
+
 2. You cloned these files to your local machine and went inside them.
+
+.. code-block:: bash
+
+    $ git clone git@github.com:pydanny/simplicity-complexity-example.git my_project
+    $ cd my_project
+
 
 3. You used simplicity_ to convert this README.rst file to JSON.
 
+.. code-block:: bash
+
+    $ simplicity README.rst > project/json/README.json
+
 4. You used complexity_ to generate a static HTML site in a new 'www' folder.
+
+.. code-block:: bash
+
+    $ complexity project www
+
+5. You opened up the generated site using complexity's built-in HTTP server:
+
+    $ open http://127.0.0.1:8000
 
 
 .. _simplicity: https://github.com/pydanny/simplicity
